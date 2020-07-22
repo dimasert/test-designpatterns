@@ -1,13 +1,15 @@
 import datetime
-
-x = 1
+import time
+x = 0
 
 while x <10:
     try:
-        print(x)
+        time.sleep(1)
+        print(x, sep=" - ", end=' Missipi \n ')
         x += 1
     except:
         print("Something went wrong")
+        break
     else:
         print("Nothing went wrong")   
 
