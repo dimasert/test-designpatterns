@@ -3,6 +3,7 @@ class observer:
         print("observer: my subject just updated and told me about it")
         print("observer: current status is" + str(subject._state))
 
+
 class subject:
     _state = 0
     _observers = []
@@ -25,6 +26,7 @@ class subject:
         self._state = n
 
         self.notify()
+
 
 s = subject()
 
